@@ -4,18 +4,12 @@ kind: StatefulService
 metadata:
   name: shopping-cart
 spec:
-
   # Datastore configuration
-  datastore:
-
-    # Name of a deployed Datastore to use.
-    name: cassandra
-
-    # Datastore specific configuration
-    config:
-
-      # Since the datastore is a Cassandra datastore, we need to specify the keyspace to use.
-      keyspace: shoppingcart
-
+  storeConfig:
+    database: shopping
+    statefulStore:
+      # Name of a deployed Datastore to use.
+      name: shopping-postgres
   containers:
     - image: gcr.io/stateserv/js-shopping-cart:latest
+      name: js-shopping-cart

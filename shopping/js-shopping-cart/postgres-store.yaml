@@ -4,8 +4,7 @@
 apiVersion: cloudstate.io/v1alpha1
 kind: StatefulStore
 metadata:
-  name: postgres
+  name: shopping-postgres
 spec:
-
   # Postgres store.  Using default values
   postgres: {}
