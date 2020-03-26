@@ -63,7 +63,7 @@ metadata:
   name: frontend
 spec:
   containers:
-  - image: coreyauger/frontend:latest    # <-- Change this to your image
+  - image: <your-registry>/frontend:latest    # <-- Change this to your repo/image
     name: frontend
 ```
 
@@ -120,7 +120,7 @@ spec:
       # Name of a deployed Datastore to use.
       name: shopping-store
   containers:
-    - image: coreyauger/shopping-cart:latest    # <-- Change this to your image
+    - image: <your-registry>/shopping-cart:latest    # <-- Change this to your repo/image
       name: js-shopping-cart
 ```
 
