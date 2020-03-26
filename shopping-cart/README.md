@@ -104,7 +104,7 @@ Push the docker image to the registry
 docker push <my-registry>/shopping-cart:latest
 ```
 
-Deploy the image by changing into the deploy folder and editing the `js-shopping-cart.yaml` to point to your docker image that you just pushed.
+Deploy the image by changing into the deploy folder and editing `js-shopping-cart.yaml` to point to the docker image that you just pushed.
 ```
 $ cd ../deploy
 $ cat js-shopping-cart.yaml
